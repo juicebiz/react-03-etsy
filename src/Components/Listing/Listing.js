@@ -4,7 +4,6 @@ import './css/main.css';
 
 export default function Listing(props) {
     const items = props.items
-    console.log(items)
     const list = items.map((item) =>                     
                 <div className="item" key="{listing_id}">
                     <div className="item-image">
@@ -31,5 +30,5 @@ export default function Listing(props) {
 }
 
 Listing.propTypes = {
-    items: PropTypes.array
+    items: PropTypes.array.isRequired
 }
